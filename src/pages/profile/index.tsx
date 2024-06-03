@@ -1,3 +1,3 @@
-export default function SearchPage(){
-    return <h1>Search Page</h1>
+export default function ProfilePage(){
+    return <h1>Profile Page</h1>
 }

@@ -1,3 +1,6 @@
+import { BsHouse } from "react-icons/bs";
+import { FaRegUserCircle } from "react-icons/fa";
+import { MdOutlineLogout } from "react-icons/md";
 import { useNavigate } from "react-router-dom"
 
 export default function MenuList(){
@@ -5,9 +8,18 @@ export default function MenuList(){
     return ( 
     <div className="footer">
         <div className="footer__grid">
-            <button type="button" onClick={() => navigate("/")}>Home</button>
-            <button type="button" onClick={() => navigate("/profile")}>Profile</button>
-            <button type="button" onClick={() => navigate("/")}>Logout</button>
+            <button type="button" onClick={() => navigate("/")}>
+                <BsHouse />
+                Home
+            </button>
+            <button type="button" onClick={() => navigate("/profile")}>
+                <FaRegUserCircle />
+                Profile
+            </button>
+            <button type="button" onClick={() => navigate("/")}>
+                <MdOutlineLogout />
+                Logout
+            </button>
         </div>
     </div>
     )
